@@ -1,22 +1,21 @@
 :root {
-  /* 基础色 */
-  --color-primary: 155 86 252;
-  /* --color-primary: 133 11 112; */
-  --color-success: 48 150 48;
-  --color-info: 28 177 249;
-  --color-warning: 255 178 2;
-  --color-danger: 217 83 79;
-  --color-brown: 90 56 6;
-  --color-blue: 15 48 77;
-  /* 深色 */
-  --color-black: 0 0 0;
-
-  --color-dark: 30 33 36;
-  /* 浅色 */
-  --color-white: 255 255 255;
-  --color-gray: 153 153 153;
-  /* 主题 */
-  --foreground: 226 226 226;
-  --background: 30 33 36;
-
+  --color-life: #c96e6e;
+  --color-fire: #ff9a77;
+  --color-light: #f8cb76;
+  --color-ice: #93d8ff;
+  --color-gem: #a38d6d;
+  --color-caster: #b3f8fe;
+  --color-attack: #da814d;
+  --color-physical: #c79d93;
+  --color-speed: #cfeea5;
+  /* fangyu/kangxing/shuxing */
+  --color-defences: #a88f67;
+  --color-chaos: #d8a7d3;
+  /* baoji */
+  --color-critical: #b2a7d6;
+  --color-mana: #a2cffb;
+  /* zhaohuan */
+  --color-minion: #dee2e6;
+  --color-uniqe: #af6025;
+  --color-cr: #ff0000;
 }

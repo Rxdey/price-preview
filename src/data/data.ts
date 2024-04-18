@@ -5644,15 +5644,20 @@ export const data: ItemData[] = [
         min: 2,
         cateGory: '满载之棺',
     },
-].map(item => {
-    const arr = item.name.split(' ');
-    const fix = arr.filter((e, i) => i > 1).join(' ');
-    return {
-        ...item,
-        filterData: {
-            name: arr[0],
-            level: arr[1],
-            desc: fix
-        },
-    };
-});
+];
+export const rebuildData = (data: ItemData[]) =>
+    data
+        .filter(item => item.name !== '满载之棺')
+        .map(item => {
+            const arr = item.name.split(' ');
+            const fix = arr.filter((e, i) => i > 1).join(' ');
+            const affixLevel = fix.match(/几率提高\s(\d+%)/);
+            return {
+                ...item,
+                name: item.baseType,
+                level: parseInt((arr.length && arr[1]) ? arr[1] : '0'),
+                desc: fix,
+                affixLevel: affixLevel ? affixLevel[1] : '',
+            };
+        })
+        .sort((a, b) => b.calculated - a.calculated);

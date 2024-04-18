@@ -11,7 +11,7 @@ export type ItemData = {
     links: number;
     quality: number;
     ilvl: number;
-    level: number;
+    level: string|number;
     corrupted: boolean;
     totalStacksize: number;
     icon: string;
@@ -24,5 +24,6 @@ export type ItemData = {
     historyLeague: string|null;
     min: number;
     cateGory: string;
-    filterData: Record<string, any>
+    affixLevel?: string;
+    desc?: string;
 };
