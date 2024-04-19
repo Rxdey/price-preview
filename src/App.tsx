@@ -118,7 +118,7 @@ export default function App() {
       <main className="p-4">
         <div className="max-w-[1000px] mx-auto text-medium">
           <div className="py-3 flex flex-row text-left text-white mb-4">
-            <div className="w-[120px] ">名称</div>
+            <div className="flex-1">名称</div>
             <div className="w-20">等级</div>
 
             <div className="flex-1">词缀</div>
@@ -131,7 +131,7 @@ export default function App() {
             <div
               className="py-3 flex flex-row text-left text-gray"
               key={item.id}>
-              <div className="w-[120px] text-def">{item.name}</div>
+              <div className="flex-1 text-def">{item.name}</div>
               <div className="w-20">{item.level}</div>
               {/* <div className="flex-1 text-[#e8dfe2]">{item.desc}</div> */}
               <RenderDesc desc={item.desc || ''} />
